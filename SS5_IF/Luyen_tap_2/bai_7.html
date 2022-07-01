@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numberA = parseInt(prompt("nhập số A"));
+    let numberB = parseInt(prompt("nhập số B"));
+    let numberC = parseInt(prompt("nhập số C"));
+    let delta = (numberB * numberB) - (4 * numberA * numberC);
+    let x1 = ((-numberB) + Math.sqrt(delta)) / (2 * numberA);
+    let x2 = ((-numberB) - Math.sqrt(delta)) / (2 * numberA);
+    let result;
+    alert(delta);
+    if (delta < 0) {
+        result = "phương trình vô nghiệm"
+    } else if (delta === 0) {
+        result = "phương trình có nghiệm kép" + "x<sub>1</sub>=x<sub>2</sub>=" + (-numberB / (2 * numberA));
+    } else {
+        result = "phương trình có 2 nghiệm phân biệt:" + "x<sub>1</sub>=" + x1 + "và x<sub>2</sub>=" + x2;
+    }
+    document.write(result);
+</script>
+</body>
+</html>
