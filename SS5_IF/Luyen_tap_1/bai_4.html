@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numberOne = prompt("nhập số A:");
+    let numberTwo = prompt("nhập số B:");
+    let numberThree = prompt("nhập số C:");
+    if (numberOne === numberTwo && numberOne === numberThree) {
+        document.write("3 số bằng nhau =" + numberOne)
+    } else if (numberOne > numberTwo) {
+        if (numberOne > numberThree) {
+            document.write("Max = A =" + numberOne)
+        } else {
+            document.write("Max = C =" + numberThree)
+        }
+    } else if (numberTwo > numberThree) {
+        document.write("Max = B =" + numberTwo)
+    } else {
+        document.write("Max = C =" + numberThree)
+    }
+</script>
+</body>
+</html>
