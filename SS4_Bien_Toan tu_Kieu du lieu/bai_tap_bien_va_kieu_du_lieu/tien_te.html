@@ -17,18 +17,21 @@
 <button onclick="doitien()">Convert</button>
 <script>
     function doitien() {
-        let giatricvao=document.getElementById('duavao').value;
-        let A=document.getElementById('A').value;
-        let B=document.getElementById('B').value;
-        if(A===B){
+        let giatricvao = document.getElementById('duavao').value;
+        let A = document.getElementById('A').value;
+        let B = document.getElementById('B').value;
+        if (A === B) {
             alert(giatricvao);
+        }if (A!==B){
+            alert(giatricvao)
         }
-        if(A==="vnd" && B==="usd") {
-            alert(giatricvao/24000);
+        else if (A === "vnd" && B === "usd") {
+            alert(giatricvao / 24000);
         }
-        if(B==="usd" && A==="vnd") {
-            alert(giatricvao/24000);
-        }}
+        else if (B === "usd" && A === "vnd") {
+            alert(giatricvao * 24000);
+        }
+    }
 </script>
 </body>
 </html>

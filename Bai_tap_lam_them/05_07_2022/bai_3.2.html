@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><b>Number One:</b></label><input type="number" id="numberOne"><br><br>
+<label><b>Number Two:</b></label><input type="number" id="numberTwo"><br><br>
+<button type="button" onclick="result('+')">Addition(+)</button>
+<button type="button" onclick="result('-')">Subtraction(-)</button>
+<button type="button" onclick="result('*')">Multiplication(*)</button>
+<button type="button" onclick="result('/')">Division(/)</button>
+<br>
+<p id="result">Kiểm Tra:</p>
+<script>
+    function result(calculation) {
+        let numberOne = parseInt(document.getElementById("numberOne").value);
+        let numberTwo = parseInt(document.getElementById("numberTwo").value);
+        if (calculation === '+') {
+            sum = numberOne + numberTwo;
+            document.getElementById("result").innerHTML = "Kết quả là: " + sum;
+        } else if (calculation === '-') {
+            minus = numberOne - numberTwo;
+            document.getElementById("result").innerHTML = "Kết quả là: " + minus;
+        } else if (calculation === '*') {
+            core = numberOne * numberTwo;
+            document.getElementById("result").innerHTML = "Kết quả là: " + core;
+        } else if (calculation === '/') {
+            divide = numberOne / numberTwo;
+            document.getElementById("result").innerHTML = "Kết quả là: " + divide;
+        }
+    }
+</script>
+</body>
+</html>
