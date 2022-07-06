@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><b>NumberOne :</b></label><input type="text" id="numberOne"><br><br>
+<label><b>NumberTwo :</b></label><input type="text" id="numberTwo"><br><br>
+<label><b>NumberThree :</b></label><input type="text" id="numberThree"><br><br>
+<button type="button" onclick="check()">Kiểm Tra</button>
+<p id="result">Kiểm Tra:</p>
+</body>
+<script>
+    function check() {
+        let numberOne = parseInt(document.getElementById("numberOne").value);
+        let numberTwo = parseInt(document.getElementById("numberTwo").value);
+        let numberThree = parseInt(document.getElementById("numberThree").value);
+        if (numberOne % numberOne === 0 || numberTwo % numberTwo === 0 || numberThree % numberThree === 0) {
+            if (numberOne > numberTwo && numberOne > numberThree) {
+                alert("số lớn nhất là : " + numberOne);
+            } else if (numberTwo > numberOne && numberTwo > numberThree) {
+                alert("số lớn nhất là : " + numberTwo);
+            } else {
+                alert("số lớn nhất là : " + numberThree)
+            }
+        }else {
+            alert("bạn nhập không phải là số")
+        }
+    }
+</script>
+</html>

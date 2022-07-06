@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table >
+    <tr>
+        <td><label><b>Math :</b></label></td>
+        <td><input type="number" id="numberOne"><br><br></td>
+    </tr>
+    <tr>
+        <td><label><b>Biological :</b></label></td>
+        <td><input type="number" id="numberTwo"><br><br></td>
+    </tr>
+    <tr>
+        <td><label><b>Chemistry :</b></label></td>
+        <td><input type="number" id="numberThree"><br><br></td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="check()">Kiểm Tra</button>
+        </td>
+    </tr>
+    <tr><td><p id="result">Kiểm Tra:</p></tr></td>
+</table>
+</body>
+<script>
+    function check() {
+        let math = parseInt(document.getElementById("numberOne").value);
+        let biological = parseInt(document.getElementById("numberTwo").value);
+        let chemistry = parseInt(document.getElementById("numberThree").value);
+        let count = (math + biological + chemistry) / 3;
+        let result = " ";
+        if (count >= 9) {
+            result = "học sinh giỏi";
+        } else if (count >= 7) {
+            result = "học sinh khá";
+        } else if (count >= 6) {
+            result = "học sinh trung bình";
+        } else if (count >= 5) {
+            result = "học lực yếu";
+        } else {
+            result = "học lực kém"
+        }
+        document.getElementById("result").innerHTML = "xếp hạng học lực:" + result;
+    }
+</script>
+</html>
