@@ -17,7 +17,8 @@
     function result(calculation) {
         let numberOne = parseInt(document.getElementById("numberOne").value);
         let numberTwo = parseInt(document.getElementById("numberTwo").value);
-        if (numberOne % numberOne === 0 || numberTwo % numberTwo === 0) {
+        if (numberOne % numberOne === 0 &&
+            numberTwo % numberTwo === 0) {
             if (calculation === '+') {
                 sum = numberOne + numberTwo;
                 document.getElementById("result").innerHTML = "Kết quả là: " + sum;

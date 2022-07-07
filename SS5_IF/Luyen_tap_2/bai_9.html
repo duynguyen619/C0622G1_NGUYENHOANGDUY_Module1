@@ -6,7 +6,16 @@
 </head>
 <body>
 <script>
-
+    let numberA = parseInt(prompt("Nhập cạnh A"));
+    let numberB = parseInt(prompt("Nhập cạnh B"));
+    let numberC = parseInt(prompt("Nhập cạnh C"));
+    let result = ""
+    if (numberA + numberB > numberC || numberB + numberC > numberC || numberA + numberC > numberB) {
+        result = "Đây là tam giác"
+    } else if (numberA + numberB > numberC && numberB + numberC > numberC && numberA + numberC > numberB){
+        result = "Không phải tam giác"
+    }
+    document.write(result)
 </script>
 </body>
 </html>

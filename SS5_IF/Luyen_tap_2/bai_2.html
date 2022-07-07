@@ -6,13 +6,17 @@
 </head>
 <body>
 <script>
-    let m=parseInt(prompt("nhập mét"));
-    if(m%m===0){
-        let ft=m*2808;
-        alert(ft);
-    }else {
-        alert("không phải là số");
-    }
+    let m;
+    do{
+        m=parseInt(prompt("nhập mét"));
+        if(m%m===0){
+            let ft=m*2808;
+            alert(ft);
+        }else {
+            alert("không phải là số");
+        }
+    }while (!(m%m===0));
+
 </script>
 </body>
 </html>
