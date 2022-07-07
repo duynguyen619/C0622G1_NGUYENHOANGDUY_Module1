@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function star() {
+        let str = prompt("nhập ngôi sao");
+        let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+        let index = 0;
+        for (let i = 0; i < arr1.length; i++) {
+            if (str === arr1[i]) {
+                    document.write(arr1[i] + " là ngôi sao  "+arr2[i])
+                    index++
+                }
+            }
+            if (index === 0)
+                alert("nhập lại ngôi sao")
+    }
+    star()
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function changeArray() {
+        let fist = 0;
+        let last = arr.length - 1;
+        while (fist < last) {
+            let b = arr[fist]
+            arr[fist] = arr[last];
+            arr[last] = b
+            fist++;
+            last--;
+        }
+    }
+
+    let arr = []
+    for (let i = 0; i < 3; i++) {
+        arr[i] = prompt("nhập số")
+    }
+    changeArray(arr)
+    document.write(arr)
+</script>
+</body>
+</html>

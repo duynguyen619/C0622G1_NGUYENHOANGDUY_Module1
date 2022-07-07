@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function integer() {
+        let arry = Array(3);
+        for (let i = 0; i < 3; i++) {
+            arry[i] = parseInt(prompt("nhập số" + i + ":"))
+        }
+        let min = arry[0]
+        for (let i = 0; i < arry.length; i++) {
+            if (min > arry[i]) {
+                min = arry[i];
+            }
+        }
+        document.write("min:" + min)
+    }
+    integer()
+</script>
+</body>
+</html>

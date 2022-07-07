@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arry = Array(10);
+    for (let i = 0; i < 10; i++) {
+        arry[i] = parseInt(prompt("nhập số" + i + ":"))
+    }
+    document.write(arry);
+    document.write(" <br> ");
+    let max = arry[0]
+    for (let i = 0; i < arry.length; i++) {
+        if (max < arry[i]) {
+            max = arry[i];
+            index = i
+        }
+    }
+    document.write("max:" + max + " at position " + index)
+</script>
+</body>
+</html>

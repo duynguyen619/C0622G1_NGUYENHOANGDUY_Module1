@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("nhập số A");
+    let b = prompt("nhập số B");
+    let c = new Array(a.length + b.length);
+    for (let i = 0; i < a.length; i++) {
+        c[i] = a[i];
+    }
+    for (let j = 0; j < b.length; j++) {
+        c[a.length + j] = b[j];
+    }
+    document.write(c);
+</script>
+</body>
+</html>

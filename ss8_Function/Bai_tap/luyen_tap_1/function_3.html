@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numberOne = parseFloat(prompt("nhập vào số 1"));
+    let numberTwo = parseFloat(prompt("nhập vào số 2"));
+    function declare(numberOne, numberTwo) {
+        let sum = 0;
+        if (numberOne > numberTwo){
+            alert("số 1 lớn hơn số 2 bạn nhé !");
+        }else{
+            sum = numberOne + numberTwo;
+            document.write('tổng : ' + sum);
+            return sum;
+        }
+    }
+    declare(numberOne, numberTwo);
+</script>
+</body>
+</html>

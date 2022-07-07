@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor(weight) {
+            this.weight = weight
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+        setWeight(weight) {
+            this.weight = weight
+        };
+        isEmpty() {
+            if (this.weight <= 0) {
+                return true;
+            } else {
+                return false
+            }
+        }
+        decreaseApple() {
+            if (this.isEmpty()) {
+                alert("Táo đã hết ");
+            } else {
+                this.weight--;
+            }
+        }
+    }
+    class Humman {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        getName(name) {
+            this.name = name;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        isMale() {
+            if (this.gender === 1) {
+                return true;
+            } else {
+                return false
+            }
+        }
+        getGender() {
+            if (this.isMale()) {
+                return "Male"
+            } else {
+                return "Female"
+            }
+        }
+        setWeight(weight) {
+            this.weight = weight;
+        }
+        say(string) {
+            console.log(string);
+        }
+        checkApple(apple){
+            return apple.isEmpty();
+        }
+        eat(apple){
+            if(apple.getWeight() > 0){
+                apple.decreaseApple(); //1
+                this.weight++; //66
+            }else {
+                alert("Hết táo rồi huhu");
+            }
+        }
+        getInfo(humman) {
+            alert((humman.name + "" + humman.weight + "" + humman.getGender()))
+        }
+    }
+
+    let adam = new Humman("adam", 1, 55);
+    let eva = new Humman("eva", 0, 40);
+    let apple = new Apple(10);
+    adam.say("Tôi là Adam" + "<br>");
+    eva.say("Tôi là Eva" + "<br>");
+    while (apple.isEmpty() !== true) {
+        document.write("Adam ăn táo nè" + "<br>");
+        adam.eat(apple);
+        document.write("Quả táo còn: " + "<br>");
+        document.write(apple.getWeight() + " đơn vị" + "<br>");
+        document.write("Cân nặng của Adm là: " + adam.getWeight() + " đơn vị" + "<br>");
+
+        document.write("<br>")
+
+        document.write("Eva ăn táo nè" + "<br>");
+        eva.eat(apple);
+
+        document.write("Quả táo còn: " + "<br>");
+        document.write(apple.getWeight() + " đơn vị" + "<br>");
+        document.write("Cân nặng là: " + eva.getWeight() + " đơn vị" + "<br>");
+    }
+</script>
+</body>
+</html>

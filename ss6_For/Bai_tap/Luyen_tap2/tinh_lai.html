@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let money = parseFloat(prompt("số tiền ban đầu"));
+    let loanMonth = parseInt(prompt("số tháng"));
+    let interest = parseFloat(prompt("lãi xuất"));
+    let result = 0;
+    for (let i = 1; i <= loanMonth; i++) {
+        result += money * interest / 100;
+        money += result;
+    }document.write("số tiền lãi sau "+loanMonth+" là "+result);
+</script>
+</body>
+</html>

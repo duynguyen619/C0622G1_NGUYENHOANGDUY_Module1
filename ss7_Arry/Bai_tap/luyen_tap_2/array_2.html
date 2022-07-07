@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Cách 1:
+    // let arry=[ 'c', 's', 'c', '2', '6', '1' ];
+    // let arryNew=[];
+    // for (let i=arry.length-1;i>=0;i--){
+    //     arryNew.push(arry[i])
+    // }document.write(arryNew)
+    // Cách 2 :
+    let array=[ 'c', 's', 'c', '2', '6', '1' ];
+    let first=0;
+    let last=array.length-1;
+    while (first<last){
+        let change=array[first];
+        array[first]=array[last];
+        array[last]=change;
+        first++;
+        last--;
+    }document.write(array);
+</script>
+</body>
+</html>
