@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let c=0
+  let a=parseInt(prompt('nhập chiều dài của mảng A'))
+  let numerators=[]
+  for (let i=0;i<a;i++){
+      numerators[i]=parseInt(prompt('nhập số'))
+  }
+  let b=parseInt(prompt('nhập chiều dài của mảng B'))
+  let denominators=[]
+  for (let i=0;i<b;i++){
+      denominators[i]=parseInt(prompt('nhập số'))
+  }
+  let max=numerators[0]/denominators[0]
+  for (let i=1;i<numerators.length;i++){
+     if (numerators[i]/denominators[i]>max){
+         max=numerators[i]/denominators[i]
+         c=i
+     }
+  }
+  document.write(max+"tại vị trí"+c)
+</script>
+</body>
+</html>

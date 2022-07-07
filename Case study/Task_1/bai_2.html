@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let width = parseInt(prompt("nhập chiều dài"));//4
+    let height = parseInt(prompt("nhập chiều cao"));//5
+    let shape = "";
+    for (let i = 1; i <= height; i++) {
+        for (let j = 1; j <= width; j++) {
+            if (i === 1 || i === height) {
+                shape += "*";
+            } else if (j === 1 || j === width) {
+                shape += "*";
+            } else {
+                shape += "&ensp;";
+            }
+
+        }
+        shape += "<br>"
+
+    }
+    document.write(shape);
+</script>
+</body>
+</html>

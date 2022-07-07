@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let str = prompt("Nhập vào 1 chuỗi.");
+    // let arr = [];
+    // arr = str.split("%\N");
+    // console.log(arr);
+    // for (let i = 0; i < arr.length; i++) {
+    //     for (let j = 0; j < str.length; j++) {
+    //         if (arr[i]===str[j]){
+    //             arr[i]=arr[i].toLowerCase();
+    //         }else {
+    //             arr[i]=arr[i].toUpperCase();
+    //         }
+    //     }
+    // }
+    // document.write(arr + " ")
+    function editString(arr) {
+        arr[0] = arr[0].toUpperCase();
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] === ' ' && arr[i - 1] === ' ') {
+                arr.splice(i, 1);
+            }
+            if (arr[i] !== ' ' && arr[i - 1] === ' ') {
+                arr[i] = arr[i].toUpperCase();
+            }
+
+        }
+        return arr.join('');
+    }
+
+    function findLongestWord(string) {
+        let array = [];
+        let arr1 = string.split(' ').sort(function (a, b) {
+            return b.length - a.length;
+        });
+        // for (let i = 0; i < arr1.length; i++) {
+        //     for (let j = 0; j < i; j++) {
+        //         if (arr1[i] > arr1[j]) {
+        //             let change = arr1[i];
+        //             arr1[i] = arr1[j];
+        //             arr1[j] = change;
+        //         }
+        //     }
+        // }
+        let max = arr1[0].length;
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i].length === max) {
+                array.push(arr1[i]);
+            }
+
+        }
+        return array;
+    }
+
+    function main() {
+        let string = prompt('nhap chuoi ki tu');
+        let word = string.toLowerCase().trim();
+        let arr = word.split('');
+        document.write('xau truoc khi chuan hoa: ' + string + '<br>');
+        document.write('xau sau khi chuan hoa: ' + editString(arr) + '<br>');
+        document.write('tu co nhieu ki tu nhat la: ' + findLongestWord(editString(arr)) + ' ,gom co: ' + findLongestWord(editString(arr))[0].length + ' ky tu');
+    }
+
+    main();
+</script>
+</body>
+</html>

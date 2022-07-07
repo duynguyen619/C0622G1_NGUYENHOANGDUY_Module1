@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let string = prompt("nhập kí tự");
+
+    function differentSymbolsNaive(string) {
+        let arr = [string[0]];
+        for (let i = 0; i < string.length; i++) {
+            if (arr.includes(string[i]) === false) {
+                arr.push(string[i]);
+            }
+        }
+        return arr;
+    }
+
+    document.write("Có " +differentSymbolsNaive(string).length+" kí tự "+differentSymbolsNaive(string));
+</script>
+</body>
+</html>

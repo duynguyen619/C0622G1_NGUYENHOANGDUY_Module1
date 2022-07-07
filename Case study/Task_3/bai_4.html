@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numberOne = prompt("nhập số A");
+    let number = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+    let str = ["Một", "Hai", "Ba", "Bốn", "Năm", "Sáu", "Bảy", "Tám", "Chín", "Không"];
+    for (let i = 0; i < numberOne.length; i++) {
+        for (let j = 0; j < number.length; j++) {
+            if (numberOne[i] === number[j]) {
+                document.write(str[j] + " ");
+            }
+        }
+    }
+    // for (let i = 0; i < numberOne.length; i++) {
+    //     switch (numberOne[i]) {
+    //         case '0':
+    //             document.write("Không ");
+    //             break;
+    //         case '1':
+    //             document.write("Môt ");
+    //             break;
+    //         case '2':
+    //             document.write("Hai ");
+    //             break;
+    //         case '3':
+    //             document.write("Ba");
+    //             break;
+    //         case '4':
+    //             document.write("Bốn");
+    //             break;
+    //         case '5':
+    //             document.write("Năm");
+    //             break;
+    //         case '6':
+    //             document.write("Sáu");
+    //             break;
+    //         case '7':
+    //             document.write("Bảy");
+    //             break;
+    //         case '8':
+    //             document.write("Tám");
+    //             break;
+    //         case '9':
+    //             document.write("Chín");
+    //             break;
+    //     }
+    // }
+</script>
+</body>
+</html>

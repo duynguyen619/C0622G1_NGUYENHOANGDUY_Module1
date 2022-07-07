@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let a=parseInt(prompt('chiều dài của mảng'))
+    // let arrA=[]
+    // for (let i=0;i<=a;i++){
+    //     arrA[i]=parseInt(prompt('nhập số'))
+    // }
+    // document.write(arrA)
+    // let arrB=[]
+    // for (let i=0;i<=a;i++){
+    //     arrB[i]=parseInt(prompt('nhập số'))
+    // }
+    // document.write(arrB)
+    // let arrC=[]
+    // for (index=0;index<arrB.length;index++){
+    //     arrA.indexOf(arrB)
+    //     arrC.indexOf(arrB)
+    //     arrC.push(arrB)
+    // }
+    // document.write(arrC)
+    let lengthA = prompt('nhập độ dài của mảng A')
+    let a = []
+    for (i = 0; i < lengthA; i++) {
+        a[i] = prompt('nhập giá trị phần tử của mảng A')
+    }
+    document.write(' A = [ ' + a + ' ] <br>')
+
+    let lengthB = prompt('nhập độ dài của mảng B')
+    let b = []
+    for (j = 0; j < lengthB; j++) {
+        b[j] = prompt('nhập giá trị phần tử của mảng B')
+    }
+    document.write(' B = [ ' + b + ' ] <br>')
+
+    let c = []
+    for (let index = 0; index < b.length; index++) {
+        if (a.indexOf(b[index]) === -1 && c.indexOf(b[index]) === -1) {
+            c.push(b[index])
+        }
+    }
+    document.write('C = [ ' + c + ' ]')
+</script>
+</body>
+</html>
