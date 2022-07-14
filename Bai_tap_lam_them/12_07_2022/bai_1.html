@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Nhập vào một số nguyên dương n. In ra các số từ 1 đến n.-->
+<!--Tính tổng các số từ 1 đến n-->
+<script>
+    function main() {
+        const n = Number(prompt("nhập số n"));
+        let count = 0;
+        let count1 = 1;
+        let count2 = 1;
+        for (let i = 1; i <= n; i++) {
+            document.write(i + "<br>")
+            count = count + i;
+            count1 = count1 * i;
+            count2 = count2 / i;
+
+        }
+        document.write("tổng các số từ 1 đến n: " + count+"<br>")
+        document.write("lũy thừa các số từ 1 đến n: " + count1+"<br>")
+        document.write("tích các số từ 1 đến n: " + count2)
+    }
+
+    main()
+</script>
+</body>
+</html>

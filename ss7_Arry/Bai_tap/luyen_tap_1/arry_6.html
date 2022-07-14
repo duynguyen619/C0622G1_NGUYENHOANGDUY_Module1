@@ -14,7 +14,7 @@
     let v=parseInt(prompt("Nhập v"));
     let result="";
     for(let i=0;i<bi.length;i++){
-        if (v==bi[i]){
+        if (v===bi[i]){
             result="V is in the array"
             break;
         }
@@ -22,6 +22,7 @@
             result="V is not in the array";
         }
     }
+
     document.write(result)
 </script>
 </body>

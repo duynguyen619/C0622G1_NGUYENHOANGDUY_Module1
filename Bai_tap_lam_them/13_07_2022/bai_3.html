@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = Number(parseInt(prompt("nhập số")));
+    let array = new Array(n);
+    for (let i = 0; i <= n; i++) {
+        array[i] = parseInt(prompt("nhập kí tự" + i))
+    }
+    document.write(array + "<br>")
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i];
+    }
+    document.write("Trung bình cộng: " + sum)
+</script>
+</body>
+</html>

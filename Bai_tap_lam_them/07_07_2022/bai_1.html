@@ -6,7 +6,21 @@
 </head>
 <body>
 <script>
-    let number=[]
+    function countChar(str) {
+        let array = ["a", "e", "i", "o", "u"];
+        let count = 0;
+        for (let i = 0; i < str.length; i++) {
+            for (let j = 0; j < array.length; j++) {
+                if (str[i] === array[j]) {
+                    count++;
+                }
+            }
+        }
+        alert(count)
+    }
+
+    let string = prompt("nhập kí tự")
+    countChar(string)
 </script>
 </body>
 </html>

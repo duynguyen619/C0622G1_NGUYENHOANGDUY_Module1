@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Cho người dùng nhập vào một mảng không qua 50,tính số lẻ trong mảng-->
+<script>
+    let number = parseInt(prompt("nhập sô"));
+    let array= new Array(number);
+    let count = 0;
+    do {
+        array[i] = prompt("nhập phần tử  :" + i);
+        if (array[i] % 2 !== 0) {
+            count += number
+        }
+        document.write("Tổng số chẵn chia hết cho 2 là : " + count)
+    } while (number <= 50)
+</script>
+</body>
+</html>

@@ -6,13 +6,15 @@
 </head>
 <body>
 <script>
-    let temperature = parseInt(prompt("nhiệt độ"));
-    if (temperature >= 100) {
-        alert("giảm nhiệt độ: " + temperature)
-    }
-    if (temperature < 20) {
-        alert("tăng nhiệt độ: " + temperature)
-    }
+    let temperature;
+    do {
+        temperature = parseInt(prompt("nhiệt độ"));
+        if (temperature > 100) {
+            alert("giảm nhiệt độ")
+        } else if (temperature < 20) {
+            alert("tăng nhiệt độ")
+        }
+    } while (temperature)
 </script>
 </body>
 </html>

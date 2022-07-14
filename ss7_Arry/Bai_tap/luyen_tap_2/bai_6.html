@@ -8,11 +8,11 @@
 <script>
     let array = ["a", "1", "-", "b", "-"];
     for (i = 0; i < array.length; i++) {
-        if (array[i] === "-") {
-            array[i] = "_";
+        if (array[i] === " - ") {
+            array[i] = " _ ";
         }
     }
-    document.write(array);
+    document.write(array.join(""));
 </script>
 </body>
 </html>

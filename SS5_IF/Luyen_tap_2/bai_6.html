@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,13 +6,14 @@
 </head>
 <body>
 <script>
-    let numberA=parseInt(prompt("nhập số A"));
-    let numberB=parseInt(prompt("nhập số B"));
-    let firstOrderEquation=-numberB/numberA
-    if(firstOrderEquation<0){
-        document.write("vô nghiệm")
-    }else {
-        document.write("có nghiệm là: "+firstOrderEquation)
+    let numberA = parseInt(prompt("nhập số A"));
+    let numberB = parseInt(prompt("nhập số B"));
+    if (numberA >=0 ) {
+        alert("phương trình có nghiệm : " + (-numberB / numberA));
+    } else if (numberB === 0 && numberA === 0) {
+        alert("phương trình vô số nghiệm");
+    } else {
+        alert("phương trình vô nghiệm")
     }
 </script>
 </body>

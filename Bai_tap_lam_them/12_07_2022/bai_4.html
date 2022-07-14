@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 10: Nhập vào một số nguyên n (0 < n <= 10 tỷ). In ra số đảo ngược của số n.
+
+Ví dụ, số 123, thì đảo ngược là 321.-->
+<script>
+    function main() {
+        const n = String(prompt("Nhập số n"));
+        let soDaoNguoc = '';
+        for (i = n.length; i >= 0; i--) {
+            // n.charAt(i) là hàm giúp bạn lấy ra ký tự thứ i trong string n
+            // chi tiết tham khảo tại https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt
+            soDaoNguoc += n.charAt(i);
+        }
+        document.write(soDaoNguoc);
+    }
+
+    main()
+</script>
+</body>
+</html>

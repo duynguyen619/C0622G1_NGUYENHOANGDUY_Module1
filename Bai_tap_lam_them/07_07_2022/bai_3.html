@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+    // let countChan = 0;
+    // let countle = 0;
+    // let result
+    // for (let i = 0; i <= arr.length; i++) {
+    //     if (arr[i] % 2 === 0) {
+    //         countChan += i;
+    //     } else {
+    //         countle += i;
+    //     }
+    // }
+    // result = (countle -countChan);
+    // document.write(result);
+    let number = parseInt(prompt("nhập số"));
+    let array = [];
+    for (let i = 0; i < number; i++) {
+        array[i] = parseInt(prompt("nhập phần tử  :" + i));
+    }
+    let sum1 = 0;
+    let sum2 = 0;
+    let result = 0;
+    function difference() {
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] % 2 === 0) {
+                sum1 = sum1 + array[i]
+            } else {
+                sum2 = sum2 + array[i]
+            }
+            result = sum1 - sum2;
+        }
+        document.write(result)
+    }
+    difference()
+</script>
+</body>
+</html>

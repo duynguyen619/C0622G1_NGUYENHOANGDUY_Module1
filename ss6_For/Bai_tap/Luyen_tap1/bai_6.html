@@ -8,13 +8,13 @@
 <script>
     let number1 = 0;
     let number2 = 1;
-    let number3 = number1 + number2;
+    let number3;
     for (let i = 0; i <= 28; i++) {
         number3 = number1 + number2;
         document.write(number3 + "<br>")
         number1 = number2;
         number2 = number3;
-        number3 = number3 % 7
+
     }
     document.write(" tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên là: " + number3)
 </script>

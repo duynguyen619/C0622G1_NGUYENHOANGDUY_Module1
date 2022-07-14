@@ -7,10 +7,9 @@
 <body>
 <script>
     let i
-    let N
+    let N= +prompt(`Enter N`)
     let product = 1
-    N = prompt(`Enter N`)
-    for(i = 1; i <= N; i++){
+    for(let i = 1; i <= N; i++){
         product = product * i
     }
     document.write(`N = ` +product)

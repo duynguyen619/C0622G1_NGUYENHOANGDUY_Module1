@@ -7,15 +7,15 @@
 <body>
 <script>
     let m;
-    do{
-        m=parseInt(prompt("nhập mét"));
-        if(m%m===0){
-            let ft=m*2808;
+    do {
+        m = parseInt(prompt("nhập mét"));
+        if (m % m === 0 && m >= 0) {
+            let ft = m * 2808;
             alert(ft);
-        }else {
+        } else {
             alert("không phải là số");
         }
-    }while (!(m%m===0));
+    } while (!(m % m === 0 && m >= 0));
 
 </script>
 </body>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("nhập số"))
+    let array = new Array(number)
+    let count = 0;
+    for (let i = 0; i < array.length; i++) {
+        array[i] = prompt("nhập phần tử  :" + i);
+        if(number%2!==0){
+            count+=number
+        }
+    }
+    document.write("Tổng số lẻ là : " + count)
+</script>
+</body>
+</html>
