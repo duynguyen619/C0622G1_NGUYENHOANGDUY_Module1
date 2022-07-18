@@ -49,20 +49,20 @@
     let n = Number(parseInt(prompt("nhập số")));
     let array = new Array(n);
     for (let i = 0; i <= n; i++) {
-        array[i] = parseInt(prompt("nhập kí tự" + i))
+        array[i] = parseInt(prompt("nhập các phần tử trong mảng" + i))
     }
-    document.write(array + "<br>")
-    let sum = 0;
-    let count=0;
     for (let i = 0; i < array.length; i++) {
-        if (array[i] % i === 1&&count===0) {
-            sum += array[i];
-            count++
-        } else {
-            alert("NOT FOUND")
+        let divisor = 0;
+        for (let j = 0; j <= array[i]; j++) {
+            if (array[i] % j === 0) {
+                divisor++;
+            }
+        }
+        if (divisor === 2) {
+            document.write(array[i]);
         }
     }
-    document.write("Trung bình các số nguyên tố: " + sum)
+    
 </script>
 </body>
 </html>

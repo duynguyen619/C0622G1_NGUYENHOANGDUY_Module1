@@ -12,11 +12,11 @@
     function checkchar(array , input) {
         let count = 0;
         for (let i = 0 ; i < array.length ; i++){
-            if (input == array[i]){
+            if (input === array[i]){
                 count++;
             }
         }
-        if (count == 0){
+        if (count === 0){
             return -1;
         }
         return "kí tự bạn vừa nhập :"+ input + "<br> xuất hiện :" + count + "lần";

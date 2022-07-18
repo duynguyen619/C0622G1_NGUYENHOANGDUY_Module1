@@ -33,19 +33,19 @@
     let n = Number(parseInt(prompt("nhập số")));
     let array = new Array(n);
     for (let i = 0; i <= n; i++) {
-        array[i] = parseInt(prompt("nhập kí tự" + i))
+        array[i] = parseInt(prompt("nhập các phần tử trong mảng" + i))
     }
-    document.write(array + "<br>")
-    if(array[i]<=1){
-        result=false;
-    }
-    for (let i = 2; i <array.length ; i++) {
-        if(array[i]%i===0){
-            alert(false);
-        }else {
-            alert(true)
+    for (let i = 0; i < array.length; i++) {
+        let divisor = 0;
+        for (let j = 0; j <= array[i]; j++) {
+            if (array[i] % j === 0) {
+                divisor++;
+            }
         }
-    }document.write()
+        if (divisor === 2) {
+            document.write(array[i]);
+        }
+    }
 </script>
 </body>
 </html>

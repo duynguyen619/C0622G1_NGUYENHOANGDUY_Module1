@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number=parseInt(prompt("nhập đồ dài của mảng"))
+    let array=[]
+    function integer(array) {
+        for (let i = 0; i < number; i++) {
+            array[i] = parseInt(prompt("nhập số" + i))
+            if (array[i] >= 10) {
+                document.write(array[i])
+            }
+        }
+    }
+    integer(array)
+</script>
+</body>
+</html>

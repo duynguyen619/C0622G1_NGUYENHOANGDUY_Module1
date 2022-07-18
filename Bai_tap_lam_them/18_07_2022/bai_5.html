@@ -8,12 +8,15 @@
 <script>
     let in_number = prompt("nhập vào dãy số nguyên bất kì :");
     let arrs = [];
-    arrs = in_number.split(" ");
+    arrs = in_number.split("");
     let arrsNew = [];
-    for ( let i = arrs.length - 1 ; i >= 0 ; i--){
-        arrsNew.push(arrs[i])
+    function check(arrs) {
+        for ( let i = arrs.length - 1 ; i >= 0 ; i--){
+            arrsNew.push(arrs[i])
+        }
+        document.write(arrsNew.join(" "));
     }
-    document.write(arrsNew);
+    check(arrs)
 </script>
 </body>
 </html>

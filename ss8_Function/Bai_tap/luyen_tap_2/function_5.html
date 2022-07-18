@@ -6,20 +6,22 @@
 </head>
 <body>
 <script>
-    function integer() {
-        let arry = Array(3);
-        for (let i = 0; i < 3; i++) {
-            arry[i] = parseInt(prompt("nhập số" + i + ":"))
-        }
-        let min = arry[0]
-        for (let i = 0; i < arry.length; i++) {
+    let number = parseInt(prompt("nhập độ dài của mảng: "))
+    let arry = []
+    for (let i = 0; i < number; i++) {
+        arry[i] = parseInt(prompt("nhập số" + i + ":"))
+    }
+    let min = arry[0]
+    function integer(arry) {
+        for (let i = 0; i < number; i++) {
             if (min > arry[i]) {
                 min = arry[i];
             }
         }
-        document.write("min:" + min)
+        document.write("min: " + min)
     }
-    integer()
+
+    integer(arry);
 </script>
 </body>
 </html>

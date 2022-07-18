@@ -6,16 +6,16 @@
 </head>
 <body>
 <script>
-    let arry = Array(10);
+    let arr = Array(10);
     for (let i = 0; i < 10; i++) {
-        arry[i] = parseInt(prompt("nhập số" + i + ":"))
+        arr[i] = parseInt(prompt("nhập số" + i + ":"))
     }
-    document.write(arry);
+    document.write(arr.toString());
     document.write(" <br> ");
-    let max = arry[0]
-    for (let i = 0; i < arry.length; i++) {
-        if (max < arry[i]) {
-            max = arry[i];
+    let max = arr[0]
+    for (let i = 0; i < arr.length; i++) {
+        if (max < arr[i]) {
+            max = arr[i];
             index = i
         }
     }

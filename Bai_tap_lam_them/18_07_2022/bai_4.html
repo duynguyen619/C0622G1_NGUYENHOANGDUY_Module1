@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number=parseInt(prompt("nhập đồ dài của mảng"))
+    let arr = [];
+    let sum = 0;
+    let medium;
+    function check(arr) {
+        for (let i = 0; i < number; i++) {
+            arr[i] = parseInt(prompt("nhap so"));
+        }
+        let max = number[0];
+        alert(max)
+
+        for (let i = 1; i < number.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i]
+            }
+        }
+        document.write("giá trị lớn nhất là : " + max);
+        document.write("<br>");
+        for (let j = 0; j < number.length; j++) {
+            sum += arr[j];
+        }
+        document.write("tổng các phần tử trong mảng là :" + sum);
+        medium = sum / arr.length;
+        document.write("<br>" + "giá trị trung bình của các phần tử trong mảng số nguyên là :" + medium);
+    }
+   check(arr)
+</script>
+</body>
+</html>
