@@ -5,6 +5,26 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    let number = parseInt(prompt("nhập độ dài của mảng"));
+    let arr = [];
+    for (let i = 0; i <= number; i++) {
+        arr[i] = parseInt(prompt("Nhập số index " + i))
+        document.write(arr[i] + "<br>")
+    }
 
+    function vowelNumber(array) {
+        let n = 0;
+        for (let j = 0; j <= number; j++) {
+            if (array[j] < 0) {
+                document.write("Các số nguyên âm : " + array[j] + "<br>");
+                n = n + 1;
+            }
+        }
+        return n
+    }
+
+    alert("Tổng số nguyên âm : " + vowelNumber(arr));
+</script>
 </body>
 </html>

@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    /*Viết hàm truyền vào một chuỗi
+    * Hàm trả về số lượng ký tự in hoa
+    * Ví dụ:hello Viet NAM => 4 */
+    function check(str) {
+        let count = 0;
+        let arr = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+        for (let i = 0; i < str.length; i++) {
+            for (let j = 0; j <arr.length ; j++) {
+                if (str[i]===arr[j]) {
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+
+    let str = "Nguyen Hoàng Duy";
+    document.write(check(str) + " " + str);
+</script>
 </body>
 </html>

@@ -11,32 +11,25 @@
             this.height = height;
             this.width = width;
         }
-
-        getHeight() {
+        getHeight(a) {
             return this.height;
         }
-
-        getWidth() {
+        getWidth(b) {
             return this.width;
         }
-
         setHeight(height) {
             this.height = height;
         }
-
         setWidth(width) {
             this.width = width;
         }
-
         getArea() {
             return height * width;
         }
-
         getPerimeter() {
             return (height + width) * 2;
         }
     }
-
     let myRectangle = new Rectangle();
     let height = myRectangle.getHeight();
     let width = myRectangle.getWidth();
@@ -45,6 +38,6 @@
     document.write("Area of rectangle is: " + myRectangle.getArea() + "<br>");
     document.write("Perimeter of rectangle is: " + myRectangle.getPerimeter() + "<br>");
 </script>
-<canvas id="retangle" style="background-color: black" width="150" height="40"></canvas>
+<canvas id="retangle" style="background-color: red" width="150" height="40"></canvas>
 </body>
 </html>
