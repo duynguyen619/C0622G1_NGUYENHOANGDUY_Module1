@@ -14,7 +14,7 @@
     document.write("Tổng các phần tử trong mảng: " + sum);
 
     function check(number) {
-        if(number<2){
+        if (number < 2) {
             return false;
         }
         for (let i = 2; i < number; i++) {
@@ -25,10 +25,20 @@
         return true;
     }
 
-    for (let i = 0; i <arr.length ; i++) {
-        check(arr[i]);
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (check(arr[i])) {
+            count++;
+        }
     }
-    document.write("<br>" + "Số nguyên tố: " + check(arr[i]));
+    document.write("<br>" + "Số nguyên tố trong mảng: " + count + "<br>");
+    let count1 = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < 0 && count1 < 0) {
+            alert(true);
+        }
+        alert(false);
+    }
 </script>
 </body>
 </html>

@@ -6,7 +6,11 @@
 </head>
 <body>
 <script>
-
+    let style = ["Jazz", "Blues"]
+    style.push("Rock-n-Roll");
+    style.slice(style.length/2, 0, "Classics");
+    style.unshift("Rap", "Reggae");
+    document.write(style)
 </script>
 </body>
 </html>

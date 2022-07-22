@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function check(number) {
+
+        if (number % number === 0) {
+            alert("là số")
+        } else {
+            alert("không phải là số")
+        }
+    }
+
+    let number1 = parseInt(prompt("nhập số"));
+    check(number1);
+
+    function check2(number) {
+        let divisor = 0;
+        for (let i = 1; i <= number; i++) {
+            if (number % i === 0) {
+                divisor++;
+            }
+        }
+        if (divisor === 2) {
+            return true
+        }
+        return false
+    }
+
+    let number2 = parseInt(prompt("nhập số"))
+    alert(check2(number2));
+    let sum = 0
+
+    function check3(number) {
+        for (let i = 1; i <= number / 2; i++) {
+            if (number % i === 0) {
+                sum += i
+            }
+            if (sum === number) {
+                return true
+            }
+        }
+        return false
+    }
+
+    let number3 = parseInt(prompt("nhập số"));
+    alert(check3(number3))
+</script>
+</body>
+</html>
